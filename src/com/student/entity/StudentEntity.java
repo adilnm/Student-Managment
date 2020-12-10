@@ -138,4 +138,12 @@ public class StudentEntity {
 		this.password = password;
 	}
 
+	@Override
+	public String toString() {
+		return "StudentEntity [studentId=" + studentId + ", studentName=" + studentName + ", course=" + course
+				+ ", firstName=" + firstName + ", lastName=" + lastName + ", addLine1=" + addLine1 + ", addLine2="
+				+ addLine2 + ", city=" + city + ", state=" + state + ", pin=" + pin + ", mobile=" + mobile + ", email="
+				+ email + ", password=" + password + "]";
+	}
+
 }

@@ -32,7 +32,8 @@ public class GetAllStudentServlet extends HttpServlet {
 		request.setAttribute("students", students);
 
 		// call jsp to display data
-		request.getRequestDispatcher("showStudents.jsp").forward(request, response);
+		request.getRequestDispatcher("showStudent.jsp").forward(request, response);
+		System.out.println(students);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)

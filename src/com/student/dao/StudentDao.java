@@ -8,4 +8,6 @@ public interface StudentDao {
 
 	public List<StudentEntity> getStudent();
 
+	public StudentEntity getStudentDetail(int studentId);
+
 }
