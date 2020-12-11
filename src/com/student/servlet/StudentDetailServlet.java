@@ -12,7 +12,7 @@ import com.student.dao.StudentDao;
 import com.student.dao.StudentDaoImp;
 import com.student.entity.StudentEntity;
 
-@WebServlet("/StudentDetail")
+@WebServlet("/studentDetail")
 public class StudentDetailServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
