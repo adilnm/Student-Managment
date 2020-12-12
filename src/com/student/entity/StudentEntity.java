@@ -34,6 +34,23 @@ public class StudentEntity {
 		this.password = password;
 	}
 
+	public StudentEntity(String studentName, String course, String firstName, String lastName, String addLine1,
+			String addLine2, String city, String state, int pin, long mobile, String email, String password) {
+		super();
+		this.studentName = studentName;
+		this.course = course;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.addLine1 = addLine1;
+		this.addLine2 = addLine2;
+		this.city = city;
+		this.state = state;
+		this.pin = pin;
+		this.mobile = mobile;
+		this.email = email;
+		this.password = password;
+	}
+
 	public int getStudentId() {
 		return studentId;
 	}

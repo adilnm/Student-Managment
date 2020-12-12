@@ -8,8 +8,15 @@
 <body>
 <%@ include file="header.jspf" %>
 <br/>
-	<a href="showAllStudent">Show Details</a>
 	<div class="container">
+	<c:if test="${message ne null}">
+ 		<h5 class="alert alert-danger">${message}</h5>
+	</c:if>
+	
+	<c:if test="${addMessage ne null}">
+ 		<h5 class="alert alert-success">${addMessage}</h5>
+	</c:if>
+
 		<table class="table table-bordered table-hover">
 			<thead class="thead-dark">
 				<th>Name</th>
@@ -25,7 +32,7 @@
 						<td>${student.course }</td>
 						<td>${student.email }</td>
 						<td>${student.city }</td>
-						<td><a href="studentDetail?student_id=${student.studentId}">Detail</a></td>
+						<td><a href="studentDetail?student_id=${student.studentId}">Detail</a>   <a href="studentDelete?student_id=${student.studentId}">Delete</a></td>
 					</tr>
 				</c:forEach>
 			</tbody>

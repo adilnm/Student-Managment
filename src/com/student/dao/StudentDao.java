@@ -10,4 +10,8 @@ public interface StudentDao {
 
 	public StudentEntity getStudentDetail(int studentId);
 
+	public boolean studentDelete(int studentId);
+
+	public boolean AddStudentStudentEntity(StudentEntity student);
+
 }

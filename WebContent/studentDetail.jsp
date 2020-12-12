@@ -6,24 +6,14 @@
 </head>
 <body>
 	<%@ include file="header.jspf" %>
-	<h1>${student.studentName }</h1>
-	<table class="table table-bordered table-hover">
-			<thead class="thead-dark">
-				<th>Name</th>
-				<th>Course</th>
-				<th>Email</th>
-				<th>City</th>
-				<th>Action</th>
-			</thead>
-			<tbody>
-					<tr>
-						<td>${student.studentName }</td>
-						<td>${student.course }</td>
-						<td>${student.email }</td>
-						<td>${student.city }</td>
-						<td><a href="studentDetail?student_id=${student.studentId}">Detail</a></td>
-					</tr>
-			</tbody>
-		</table>
+	<div class="container">
+		<h4>Name: ${student.studentName }</h4>
+		<h4>Course: ${student.course }</h4>
+		<h4>City: ${student.city }</h4>
+		<h4>State: ${student.state }</h4>
+		<h4>Phone: ${student.mobile }</h4>
+		<h4>Email: ${student.email }</h4>
+		</div>
+	
 </body>
 </html>
